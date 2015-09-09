@@ -13,7 +13,7 @@ After running every application 10 times, this are the results for the average t
 #### Future for-comprehension
 * 13.4 ms (17 9 8 11 14 17 8 19 12 19)
 
-#### AsyncWait
+#### AsyncAwait
 * 6 ms (6 9 5 5 6 8 5 6 5 5)
 
-The machine used to run this benchark is an Intel® Xeon(R) CPU X5687 @ 3.60GHz × 4 with 23.5 GiB of memory running on Ubuntu 14.04 LTS 64 bits.
+The machine used to run this benchmark is an Intel® Xeon(R) CPU X5687 @ 3.60GHz × 4 with 23.5 GiB of memory running on Ubuntu 14.04 LTS 64 bits.
