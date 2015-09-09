@@ -1,8 +1,9 @@
 package com.gvolpe.computations
 
-import scala.concurrent.Future
+import scala.concurrent.{Await, Future}
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.util.{Failure, Success}
+import scala.concurrent.duration._
 
 object FutureApp extends App {
 
@@ -23,6 +24,5 @@ object FutureApp extends App {
     case Failure(e) => println(s"ERROR: ${e.getMessage}")
   }
 
-  Thread.sleep(200)
-
+  Await.ready(f, 200 millis)
 }
