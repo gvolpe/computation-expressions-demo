@@ -6,7 +6,7 @@ import scala.util.{Failure, Success}
 
 object FutureApp extends App {
 
-  val (n1, n2, n3) = (Future(3), Future(6), Future(1))
+  val (n1, n2, n3) = (Future(Math.sqrt(7891.12)), Future(Math.sqrt(995522.54)), Future(Math.sqrt(359.87)))
 
   val start = System.currentTimeMillis()
 
