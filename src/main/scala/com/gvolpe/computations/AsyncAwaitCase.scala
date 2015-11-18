@@ -1,15 +1,17 @@
 package com.gvolpe.computations
 
+import com.gvolpe.computations.fileops.WordCounter
+
 import scala.async.Async.{async, await}
 import scala.concurrent.Await
 import scala.concurrent.duration._
 import scala.concurrent.ExecutionContext.Implicits.global
 
-object AsyncAwaitCase extends ResultCase {
+object AsyncAwaitCase extends WordCount {
 
-  override def sumResult: Double = {
+  override def wordCount: Int = {
     val f = async {
-      await(n1) + await(n2) + await(n3)
+      await(WordCounter("star")) + await(WordCounter("wars")) + await(WordCounter("vader"))
     }
     Await.result(f, 200 millis)
   }

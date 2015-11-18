@@ -10,12 +10,12 @@ import org.openjdk.jmh.annotations.{Benchmark, Mode, OutputTimeUnit, BenchmarkMo
 class FutureBenchmark {
 
   @Benchmark
-  def futureResult: Unit = FutureCase.sumResult
+  def futureResult: Unit = FutureCase.wordCount
 
   @Benchmark
-  def futureSequenceResult: Unit = FutureSequenceCase.sumResult
+  def futureSequenceResult: Unit = FutureSequenceCase.wordCount
 
   @Benchmark
-  def asyncAwaitResult: Unit = AsyncAwaitCase.sumResult
+  def asyncAwaitResult: Unit = AsyncAwaitCase.wordCount
 
 }
